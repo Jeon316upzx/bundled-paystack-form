@@ -1,5 +1,6 @@
 const path = require('path');
 
+const stylesHandler = 'style-loader';
 module.exports = {
     mode: 'production', // or 'development' for development mode
     entry: './src/index.js',
@@ -23,8 +24,12 @@ module.exports = {
         },
         {
           test: /\.(sass|less|css)$/,
-          use: ['style-loader', 'css-loader', 'less-loader']
-        }
+          use: ['style-loader', 'css-loader', 'less-loader', 'postcss-loader']
+        },
+        {
+          test: /\.(js|jsx)$/i,
+          loader: 'babel-loader',
+        },
       ],
     },
     resolve: {

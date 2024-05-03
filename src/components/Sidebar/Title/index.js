@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Title = ({ title }) => {
   return (
-    <h3 className='uppercase text-[12px] font-[500]'>
+    <h3 className='title'>
         { title }
     </h3>
   )

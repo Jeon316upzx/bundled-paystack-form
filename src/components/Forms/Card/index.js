@@ -78,12 +78,12 @@ const Card = () => {
   };
 
   return (
-    <div className="py-10 transition-all ease-in-out delay-150">
+    <div className="input-form-container">
       <form>
-        <div className="h-26 relative">
+        <div className="input-relative">
           <label
             htmlFor="card_number"
-            className="uppercase absolute top-3 text-[12px] left-4 text-gray-400"
+            className="label"
           >
             card number
           </label>
@@ -93,8 +93,7 @@ const Card = () => {
             type="text"
             onChange={handleNumberChange}
             value={card_number}
-            className="h-26 w-full px-4 pt-8 pb-3  text-sm border-solid border-2 border-gray-100 hover:border-green-50 placeholder-grey-300 rounded-md
-            focus:outline-none focus:border-black-100 hover:outline-none hover:border-black-200"
+            className="input"
             placeholder="0000 0000 0000 0000"
             required
           />
@@ -103,7 +102,7 @@ const Card = () => {
           <div className="h-26 relative">
             <label
               htmlFor="card_expiry_date"
-              className="uppercase absolute top-3 text-[12px] left-4 text-gray-400"
+              className="label"
             >
               card expiry
             </label>
@@ -113,7 +112,7 @@ const Card = () => {
               type="text"
               onChange={handleExpiryChange}
               value={card_expiry_date}
-              className="h-26 w-full px-4 pt-8 pb-3  text-sm border-solid border-2 border-gray-100 hover:border-green-50 placeholder-grey-300 rounded-md"
+              className="input"
               placeholder="MM / YYYY"
               required
             />
@@ -122,7 +121,7 @@ const Card = () => {
           <div className="h-26 relative">
             <label
               htmlFor="card_cvv"
-              className="uppercase absolute top-3 text-[12px] left-4 text-gray-400"
+              className="label"
             >
               cvv
             </label>
@@ -132,7 +131,7 @@ const Card = () => {
               type="text"
               onChange={handleCVVChange}
               value={card_cvv}
-              className="h-26 w-full px-4 pt-8 pb-3  text-sm border-solid border-2 border-gray-100 hover:border-green-50 placeholder-grey-300 rounded-md"
+              className="input"
               placeholder="123"
               maxLength={3}
               required
@@ -140,7 +139,7 @@ const Card = () => {
           </div>
         </div>
         <div
-          className="grid grid-cols-1 pt-5"
+          className="button-container"
           onClick={(event) => handleSubmit(event)}
         >
           <PayButton amount={600} currency={"NGN"} onClick={handleSubmit} loading={loading} />

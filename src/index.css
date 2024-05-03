@@ -1,3 +1,411 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-style-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #047857; /* Green-700 from Tailwind CSS */
+  padding-left: 0.75rem; /* Equivalent to px-3 from Tailwind CSS */
+  padding-right: 0.75rem; /* Equivalent to px-3 from Tailwind CSS */
+  padding-top: 0.5rem; /* Equivalent to py-2 from Tailwind CSS */
+  padding-bottom: 0.5rem; /* Equivalent to py-2 from Tailwind CSS */
+  border-radius: 0.375rem; /* Equivalent to rounded-md from Tailwind CSS */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-md from Tailwind CSS */
+  color: #fff; /* Equivalent to text-white from Tailwind CSS */
+}
+
+.container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 45vw;
+}
+
+.form-container {
+  position: relative;
+  min-height: 40vh; /* Black with alpha transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.securedby {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.875rem; /* Equivalent to text-sm from Tailwind CSS */
+}
+
+.padlock-margin {
+  margin-right: 0.5rem;
+}
+
+.padlock-weight {
+  font-weight: 600;
+}
+
+.form-partition {
+  height: 58vh;
+  width: 40vw;
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Equivalent to grid-cols-3 from Tailwind CSS */
+  background-color: #ffffff; /* White background color */
+  border-radius: 0.375rem; /* Equivalent to rounded-md from Tailwind CSS */
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 0;
+  right: -30px;
+}
+
+.form-header {
+  grid-column: span 2; /* Equivalent to col-span-2 from Tailwind CSS */
+  padding: 1.25rem; /* Equivalent to p-5 from Tailwind CSS */
+  background-color: #ffffff; /* Equivalent to bg-white from Tailwind CSS */
+}
+
+.form-section {
+  min-height: auto; /* Remove any min-height that may have been set */
+}
+
+.btn-solid {
+  background-color: #047857; /* Green-600 from Tailwind CSS */
+  padding-top: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  padding-bottom: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  border-radius: 0.375rem; /* Equivalent to rounded-md from Tailwind CSS */
+  color: #fff; /* Equivalent to text-white from Tailwind CSS */
+  font-size: 0.875rem; /* Equivalent to text-sm from Tailwind CSS */
+}
+
+.btn-outline {
+  background-color: #ffffff; /* White background color */
+  padding-top: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  padding-bottom: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  border-radius: 0.375rem; /* Equivalent to rounded-md from Tailwind CSS */
+  color: #000000; /* Black text color */
+  font-size: 0.875rem; /* Equivalent to text-sm from Tailwind CSS */
+  border-style: solid; /* Equivalent to border-solid from Tailwind CSS */
+  border-width: 2px; /* Equivalent to border-2 from Tailwind CSS */
+  border-color: #cbd5e0; /* Gray-400 from Tailwind CSS */
+}
+
+.badge {
+  margin-left: 0.5rem; /* Equivalent to ml-2 from Tailwind CSS */
+  padding: 1.5px; /* Equivalent to p-[1.5px] from Tailwind CSS */
+  background-color: #dc2626; /* Red-500 from Tailwind CSS */
+  text-transform: uppercase; /* Equivalent to uppercase from Tailwind CSS */
+  color: #ffffff; /* White text color */
+  font-size: 0.4375rem; /* Equivalent to text-[7px] from Tailwind CSS */
+}
+
+.title {
+  text-transform: uppercase; /* Equivalent to uppercase from Tailwind CSS */
+  font-size: 0.75rem; /* Equivalent to text-[12px] from Tailwind CSS */
+  font-weight: 500; /* Equivalent to font-[500] from Tailwind CSS */
+}
+
+.header-container {
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: row; /* Equivalent to flex-row from Tailwind CSS */
+  justify-content: space-between; /* Equivalent to justify-between from Tailwind CSS */
+  align-items: center; /* Equivalent to items-center from Tailwind CSS */
+}
+
+.email_curr {
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: column; /* Equivalent to flex-col from Tailwind CSS */
+}
+
+.email {
+  font-size: 0.75rem; /* Equivalent to text-xs from Tailwind CSS */
+  opacity: 0.6; /* Equivalent to opacity-60 from Tailwind CSS */
+}
+
+.curr {
+  font-size: 0.75rem; /* Equivalent to text-[12px] from Tailwind CSS */
+  color: #6ee7b7; /* Equivalent to text-green-300 from Tailwind CSS */
+}
+
+.siderbar {
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: column; /* Equivalent to flex-col from Tailwind CSS */
+  height: 100%; /* Equivalent to h-full from Tailwind CSS */
+  background-color: #f4f4f4; /* Background color provided by Tailwind CSS */
+  padding: 2.5rem; /* Equivalent to p-10 from Tailwind CSS */
+}
+
+.sidebar-container {
+  padding-top: 1.25rem; /* Equivalent to pt-5 from Tailwind CSS */
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: column; /* Equivalent to flex-col from Tailwind CSS */
+}
+
+.sidebar-item {
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: row; /* Equivalent to flex-row from Tailwind CSS */
+  align-items: center; /* Equivalent to items-center from Tailwind CSS */
+  padding-top: 0.5rem; /* Equivalent to py-2 from Tailwind CSS */
+  padding-bottom: 0.5rem; /* Equivalent to py-2 from Tailwind CSS */
+  position: relative; /* Equivalent to relative from Tailwind CSS */
+}
+
+.sidebar-icon {
+  margin-right: 1rem; /* Equivalent to mr-4 from Tailwind CSS */
+}
+
+.sidebar-title {
+  transition-property: all; /* Equivalent to transition-all from Tailwind CSS */
+  transition-timing-function: ease-in-out; /* Equivalent to ease-in-out from Tailwind CSS */
+  color: #a5a5a5;; /* Equivalent to text-green-300 from Tailwind CSS */
+  font-size: 0.75rem; /* Equivalent to text-xs from Tailwind CSS */
+  white-space: nowrap; /* Equivalent to whitespace-nowrap from Tailwind CSS */
+  text-transform: capitalize; /* Equivalent to capitalize from Tailwind CSS */
+}
+
+.selected-sidebar-title {
+  transition-property: all; /* Equivalent to transition-all from Tailwind CSS */
+  transition-timing-function: ease-in-out; /* Equivalent to ease-in-out from Tailwind CSS */
+  color: #6ee7b7; /* Equivalent to text-green-300 from Tailwind CSS */
+  font-size: 0.75rem; /* Equivalent to text-xs from Tailwind CSS */
+  white-space: nowrap; /* Equivalent to whitespace-nowrap from Tailwind CSS */
+  text-transform: capitalize;
+  
+}
+
+.input-form-container {
+  padding-top: 2.5rem; /* Equivalent to py-10 from Tailwind CSS */
+  padding-bottom: 2.5rem; /* Equivalent to py-10 from Tailwind CSS */
+  transition-property: all; /* Equivalent to transition-all from Tailwind CSS */
+  transition-timing-function: ease-in-out; /* Equivalent to ease-in-out from Tailwind CSS */
+  transition-delay: 150ms; /* Equivalent to delay-150 from Tailwind CSS */
+}
+
+.input-relative {
+  height: 6.5rem; /* Equivalent to h-26 from Tailwind CSS */
+  position: relative; /* Equivalent to relative from Tailwind CSS */
+}
+
+.label {
+  text-transform: uppercase; /* Equivalent to uppercase from Tailwind CSS */
+  position: absolute; /* Equivalent to absolute from Tailwind CSS */
+  top: 0.75rem; /* Equivalent to top-3 from Tailwind CSS */
+  font-size: 0.75rem; /* Equivalent to text-[12px] from Tailwind CSS */
+  left: 1rem; /* Equivalent to left-4 from Tailwind CSS */
+  color: #a5a5a5; /* Equivalent to text-gray-400 from Tailwind CSS */
+}
+
+.input {
+  height: 4.5rem; /* Equivalent to h-26 from Tailwind CSS */
+  width: 100%; /* Equivalent to w-full from Tailwind CSS */
+  padding-left: 1rem; /* Equivalent to px-4 from Tailwind CSS */
+  padding-right: 1rem; /* Equivalent to px-4 from Tailwind CSS */
+  padding-top: 2rem; /* Equivalent to pt-8 from Tailwind CSS */
+  padding-bottom: 0.75rem; /* Equivalent to pb-3 from Tailwind CSS */
+  font-size: 0.875rem; /* Equivalent to text-sm from Tailwind CSS */
+  border-style: solid; /* Equivalent to border-solid from Tailwind CSS */
+  border-width: 2px; /* Equivalent to border-2 from Tailwind CSS */
+  border-color: #e5e7eb; /* Equivalent to border-gray-100 from Tailwind CSS */
+  transition: border-color 0.3s ease-in-out; /* Hover transition effect */
+  border-radius: 0.375rem; /* Equivalent to rounded-md from Tailwind CSS */
+}
+
+.input:hover,
+.input:focus {
+  border-color: #6ee7b7; /* Equivalent to border-green-50 from Tailwind CSS */
+  outline: none; /* Remove outline on focus */
+}
+
+.input::placeholder {
+  color: #9ca3af; /* Equivalent to placeholder-grey-300 from Tailwind CSS */
+}
+
+.input:focus {
+  border-color: #000000; /* Equivalent to focus:border-black-100 from Tailwind CSS */
+  outline: none; /* Remove outline on focus */
+}
+
+.input:hover:focus {
+  border-color: #6b7280; /* Equivalent to hover:border-black-200 from Tailwind CSS */
+  outline: none; /* Remove outline on focus */
+}
+
+.button-container {
+  display: grid; /* Equivalent to grid from Tailwind CSS */
+  grid-template-columns: repeat(
+    1,
+    minmax(0, 1fr)
+  ); /* Equivalent to grid-cols-1 from Tailwind CSS */
+  padding-top: 1.25rem; /* Equivalent to pt-5 from Tailwind CSS */
+}
+
+.bank-container {
+  padding-top: 2.5rem; /* Equivalent to py-10 from Tailwind CSS */
+  padding-bottom: 2.5rem; /* Equivalent to py-10 from Tailwind CSS */
+  transition: all 0.3s ease-in-out 150ms; /* Equivalent to transition-all ease-in-out delay-150 from Tailwind CSS */
+}
+
+.dial-container {
+  border-radius: 0.375rem; /* Equivalent to rounded-md from Tailwind CSS */
+  background-color: #e5e7eb; /* Equivalent to bg-gray-100 from Tailwind CSS */
+  min-height: 5rem; /* Equivalent to min-h-20 from Tailwind CSS */
+  padding: 2.5rem; /* Equivalent to p-10 from Tailwind CSS */
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: column; /* Equivalent to flex-col from Tailwind CSS */
+  justify-content: center; /* Equivalent to justify-center from Tailwind CSS */
+  align-items: center; /* Equivalent to items-center from Tailwind CSS */
+}
+
+.one31 {
+  background-color: #34d399; /* Equivalent to bg-green-400 from Tailwind CSS */
+  color: #000000; /* Equivalent to text-black from Tailwind CSS */
+  padding-left: 0.25rem; /* Equivalent to px-1 from Tailwind CSS */
+  padding-right: 0.25rem; /* Equivalent to px-1 from Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-[1rem] from Tailwind CSS */
+}
+
+.dial-desc {
+  font-size: 0.75rem; /* Equivalent to text-xs from Tailwind CSS */
+  text-align: center; /* Equivalent to text-center from Tailwind CSS */
+  padding-top: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  padding-bottom: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  color: #9ca3af; /* Equivalent to text-gray-500 from Tailwind CSS */
+}
+
+.copy {
+  font-size: 0.75rem; /* Equivalent to text-xs from Tailwind CSS */
+  text-align: center; /* Equivalent to text-center from Tailwind CSS */
+  padding-top: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  padding-bottom: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  color: #9ca3af; /* Equivalent to text-gray-500 from Tailwind CSS */
+}
+
+.mobile {
+  border-radius: 0.375rem; /* Equivalent to rounded-md from Tailwind CSS */
+  background-color: #e5e7eb; /* Equivalent to bg-gray-100 from Tailwind CSS */
+  min-height: 5rem; /* Equivalent to min-h-20 from Tailwind CSS */
+  padding: 2.5rem; /* Equivalent to p-10 from Tailwind CSS */
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: column; /* Equivalent to flex-col from Tailwind CSS */
+  justify-content: center; /* Equivalent to justify-center from Tailwind CSS */
+  align-items: center; /* Equivalent to items-center from Tailwind CSS */
+}
+
+.mobile-form {
+  padding-top: 0.5rem; /* Equivalent to pt-2 from Tailwind CSS */
+}
+
+.transfer-money {
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  justify-content: center; /* Equivalent to justify-center from Tailwind CSS */
+  padding-top: 0.25rem; /* Equivalent to py-1 from Tailwind CSS */
+  padding-bottom: 0.25rem; /* Equivalent to py-1 from Tailwind CSS */
+}
+
+.transfer {
+  color: #a5a5a5; /* Equivalent to text-gray-400 from Tailwind CSS */
+  padding-left: 0.25rem; /* Equivalent to px-1 from Tailwind CSS */
+  padding-right: 0.25rem; /* Equivalent to px-1 from Tailwind CSS */
+  font-size: 0.875rem; /* Equivalent to text-sm from Tailwind CSS */
+}
+
+.zenith {
+  font-size: 1.25rem; /* Equivalent to text-xl from Tailwind CSS */
+}
+
+.zenith-container {
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: column; /* Equivalent to flex-col from Tailwind CSS */
+  text-align: center; /* Equivalent to text-center from Tailwind CSS */
+}
+
+.bank-acct-cont {
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: row; /* Equivalent to flex-row from Tailwind CSS */
+  align-items: center; /* Equivalent to items-center from Tailwind CSS */
+}
+
+.acct {
+  font-size: 1.5rem; /* Equivalent to text-2xl from Tailwind CSS */
+}
+
+.copy-acct {
+  margin-left: 0.5rem; /* Equivalent to ml-2 from Tailwind CSS */
+  opacity: 0.3; /* Equivalent to opacity-30 from Tailwind CSS */
+}
+
+.checkout-container {
+  border-radius: 0.375rem; /* Equivalent to rounded-md from Tailwind CSS */
+  background-color: #e5e7eb; /* Equivalent to bg-gray-100 from Tailwind CSS */
+  min-height: 5rem; /* Equivalent to min-h-20 from Tailwind CSS */
+  padding-left: 2.5rem; /* Equivalent to px-10 from Tailwind CSS */
+  padding-right: 2.5rem; /* Equivalent to px-10 from Tailwind CSS */
+  padding-top: 1.25rem; /* Equivalent to py-5 from Tailwind CSS */
+  padding-bottom: 1.25rem; /* Equivalent to py-5 from Tailwind CSS */
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: column; /* Equivalent to flex-col from Tailwind CSS */
+  justify-content: center; /* Equivalent to justify-center from Tailwind CSS */
+  align-items: center; /* Equivalent to items-center from Tailwind CSS */
+}
+
+.checkout-title {
+  color: #9ca3af; /* Equivalent to text-gray-400 from Tailwind CSS */
+  padding-left: 0.25rem; /* Equivalent to px-1 from Tailwind CSS */
+  padding-right: 0.25rem; /* Equivalent to px-1 from Tailwind CSS */
+  font-size: 0.875rem; /* Equivalent to text-sm from Tailwind CSS */
+}
+
+.expires {
+  font-size: 0.75rem; /* Equivalent to text-xs from Tailwind CSS */
+  text-align: center; /* Equivalent to text-center from Tailwind CSS */
+  padding-top: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  padding-bottom: 0.75rem; /* Equivalent to py-3 from Tailwind CSS */
+  color: #9ca3af; /* Equivalent to text-gray-400 from Tailwind CSS */
+}
+
+
+.visa-cnt {
+  border-radius: 0.375rem; /* Equivalent to rounded-md from Tailwind CSS */
+  background-color: #E5E7EB; /* Equivalent to bg-gray-100 from Tailwind CSS */
+  min-height: 5rem; /* Equivalent to min-h-20 from Tailwind CSS */
+  padding-left: 2.5rem; /* Equivalent to px-10 from Tailwind CSS */
+  padding-right: 2.5rem; /* Equivalent to px-10 from Tailwind CSS */
+  padding-top: 1.25rem; /* Equivalent to py-5 from Tailwind CSS */
+  padding-bottom: 1.25rem; /* Equivalent to py-5 from Tailwind CSS */
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: column; /* Equivalent to flex-col from Tailwind CSS */
+  justify-content: center; /* Equivalent to justify-center from Tailwind CSS */
+  align-items: center; /* Equivalent to items-center from Tailwind CSS */
+}
+
+.scan {
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: column; /* Equivalent to flex-col from Tailwind CSS */
+  text-align: center; /* Equivalent to text-center from Tailwind CSS */
+}
+
+.scan-txt {
+  font-size: 0.75rem; /* Equivalent to text-xs from Tailwind CSS */
+  padding-top: 0.5rem; /* Equivalent to py-2 from Tailwind CSS */
+  padding-bottom: 0.5rem; /* Equivalent to py-2 from Tailwind CSS */
+}
+
+.scan-icon-container {
+  display: flex; /* Equivalent to flex from Tailwind CSS */
+  flex-direction: row; /* Equivalent to flex-row from Tailwind CSS */
+  align-items: center; /* Equivalent to items-center from Tailwind CSS */
+  justify-content: center; /* Equivalent to justify-center from Tailwind CSS */
+}
+
+.scan-icon {
+  opacity: 0.3; /* Equivalent to opacity-30 from Tailwind CSS */
+  margin-bottom: 0.75rem; /* Equivalent to mb-3 from Tailwind CSS */
+}
